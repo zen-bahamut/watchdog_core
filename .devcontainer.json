@@ -1,0 +1,15 @@
+{
+	"dockerComposeFile": "./docker-compose.yml",
+	"service": "jupyter_notebooks",
+	"workspaceFolder": "/data/jobs/pythonbox",
+	"extensions": [
+		"streetsidesoftware.code-spell-checker",
+		"ms-python.python",
+		"ms-toolsai.jupyter",
+		"gitkraken.gitkraken-authentication",
+		"eamodio.gitlens",
+		"njpwerner.autodocstring",
+		"adpyke.vscode-sql-formatter",
+		"KnisterPeter.vscode-commitizen"
+	]
+}

@@ -1,0 +1,4 @@
+[flake8]
+max-line-length = 88
+# it's not a bug that we aren't using all of hacking, ignore:
+ignore = W503, D401, N813

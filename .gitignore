@@ -1,0 +1,11 @@
+.ipynb_checkpoints
+cache
+results
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*$py.class
+.DS_Store
+node_modules
+.terrafrom
+utils/secrets/envs

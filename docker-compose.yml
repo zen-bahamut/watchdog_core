@@ -1,0 +1,19 @@
+version: '3.4'
+
+
+services:
+  jupyter_notebooks:
+    container_name: watchdog-dev
+    build:
+      context: 
+      args:
+        LOGNAME: $LOGNAME
+        USER: $USER 
+        LNAME: $LNAME
+        USERNAME: $USERNAME
+    volumes:
+      - ./:/watchdog/core/pythonbox
+    ports:
+      - 8889:8889
+    command: jupyter notebook --notebook-dir=/data/jobs/pythonbox --allow-root --NotebookApp.ip='0.0.0.0' --NotebookApp.token='' --NotebookApp.password='' --NotebookApp.port=8889 --NotebookApp.disable_check_xsrf=True
+    restart: always
